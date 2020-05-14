@@ -447,7 +447,8 @@ img {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #dddddd;
+  /*color: #dddddd;*/
+  color: transparent;
 }
 .page-header__middle-item-subtitle {
   color: #989898;
