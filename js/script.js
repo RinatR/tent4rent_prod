@@ -13,6 +13,9 @@ for(var i = 0; i < order_btn.length; i++) {
   overlay.style.display = "block";
   body.style.overflow = "hidden";
   });
+  
+    fbq('track', 'Purchase', {currency: "RUB", value: 30.00});
+  
 }
 
 modal_close.addEventListener("click", function() {
