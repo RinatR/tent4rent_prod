@@ -13,7 +13,16 @@ for(var i = 0; i < order_btn.length; i++) {
   overlay.style.display = "block";
   body.style.overflow = "hidden";
   
-    fbq('track', 'Purchase', {currency: "RUB", value: 30.00});
+    fbq('track', 'Purchase',
+  // begin required parameter object
+  {
+    value: 200,
+    currency: 'RUB',
+    content_type: 'product', // required property
+    content_ids: 'h7mf4i6ojt' // required property, if not using 'contents' property
+  }
+  // end required parameter object
+);
   });
   
   
