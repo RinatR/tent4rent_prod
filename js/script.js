@@ -7,31 +7,17 @@ var hamburger = document.querySelector(".hamburger");
 var menu = document.querySelector(".menu");
 var menuToggle = document.querySelector(".menu__toggle");
 
-// for(var i = 0; i < order_btn.length; i++) {
-//   order_btn[i].addEventListener("click", function() {
-//   modal.style.display = "block";
-//   overlay.style.display = "block";
-//   body.style.overflow = "hidden";
-  
-//     fbq('track', 'Purchase',
-//   // begin required parameter object
-//   {
-//     value: 200,
-//     currency: 'RUB',
-//     content_type: 'product', // required property
-//     content_ids: 'h7mf4i6ojt' // required property, if not using 'contents' property
-//   }
-//   // end required parameter object
-// );
-//   });
-  
-  
-// }
+for(var i = 0; i < order_btn.length; i++) {
+  order_btn[i].addEventListener("click", function() {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  body.style.overflow = "hidden";  
+}
 
-// modal_close.addEventListener("click", function() {
-//   modal.style.display = "none";
-//   overlay.style.display = "none";
-//   });
+modal_close.addEventListener("click", function() {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+  });
 
 
 // обработчик открытия меню
