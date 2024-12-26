@@ -12,7 +12,7 @@ for(var i = 0; i < order_btn.length; i++) {
   modal.style.display = "block";
   overlay.style.display = "block";
   body.style.overflow = "hidden";  
-  }
+  });
 }
 
 modal_close.addEventListener("click", function() {
