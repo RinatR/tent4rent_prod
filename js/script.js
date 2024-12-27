@@ -1,18 +1,24 @@
-var order_btn = document.getElementsByClassName("btn--add_to_cart");
-var modal = document.querySelector(".modal");
-var overlay = document.querySelector(".page-wrapper__overlay");
-var body = document.querySelector("body");
-var modal_close = document.querySelector(".modal__close");
-var hamburger = document.querySelector(".hamburger");
-var menu = document.querySelector(".menu");
-var menuToggle = document.querySelector(".menu__toggle");
+const order_btn = document.getElementsByClassName("btn--add_to_cart");
+const productCard = document.getElementsByClassName("products");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".page-wrapper__overlay");
+const body = document.querySelector("body");
+const modal_close = document.querySelector(".modal__close");
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+const menuToggle = document.querySelector(".menu__toggle");
 
-for(var i = 0; i < order_btn.length; i++) {
-  order_btn[i].addEventListener("click", function() {
+
+
+
+products.onclick = function(event){
+  let target = event.target;
+
+  if (event.target.className != 'btn btn--add_to_cart') return;
+ 
   modal.style.display = "block";
   overlay.style.display = "block";
-  body.style.overflow = "hidden";  
-  });
+  body.style.overflow = "hidden"; 
 }
 
 modal_close.addEventListener("click", function() {
@@ -37,7 +43,7 @@ menuToggle.addEventListener("click", function(event) {
 });
 
 menu.onclick = function(event) {
-  var target = event.target;
+  const target = event.target;
 
   // цикл двигается вверх от target к родителям до table
   while (target != this) {
@@ -51,3 +57,12 @@ menu.onclick = function(event) {
     target = target.parentNode;
   }
 }
+  
+  
+
+   
+  
+  
+
+
+

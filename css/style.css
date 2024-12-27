@@ -383,7 +383,7 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  z-index: 3;
 }
 .page-header {
   display: flex;
@@ -532,7 +532,7 @@ img {
   background-color: #2d2d2d;
   box-sizing: border-box;
   list-style: none;
-  z-index: 3;
+  z-index: 2;
 }
 .menu--opened {
   display: block;
@@ -822,6 +822,7 @@ img {
   text-transform: uppercase;
   background-color: #f7c51e;
   border-radius: 2px;
+  border: 0;
   box-sizing: border-box;
   transition: all 0.2s ease-out;
 }
@@ -1054,7 +1055,7 @@ img {
   padding: 50px;
   box-sizing: border-box;
   background-color: #ffffff;
-  z-index: 3;
+  z-index: 4;
 }
 .modal__close {
   position: absolute;
