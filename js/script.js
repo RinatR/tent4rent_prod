@@ -14,6 +14,8 @@ const menuToggle = document.querySelector(".menu__toggle");
 products.onclick = function(event){
   let target = event.target;
 
+  
+
   if (event.target.className != 'btn btn--add_to_cart') return;
  
   modal.style.display = "block";
